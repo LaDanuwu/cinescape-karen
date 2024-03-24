@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINESCAPE | INICIO</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section id="cont-home">      
+        
+
+        <div class="header">
+            <a href="#" ><img src="img/menu.png" alt="Menu" onclick="closePanel()"></a>
+            <a href=""><img src="img/icon-logo.png" alt="Icon Logo"></a>
+            <a href=""><img src="img/user.png" alt="Icon User"></a>
+        </div>
+
+        <div id="panel-lateral">
+            <img src="img/menu.png" alt="Menu" onclick="closePanel()">
+            <button class="panel__menu" onclick="closePanel()"><img src="img/menu.png" alt="Icon Menu"></button>
+            <h2>Editar Mi cuenta</h2>          
+            <ul>
+                <ul>
+                    <a href="#">Home</a>
+                    <a href="#">Aventuras</a>
+                    <a href="#">Animadas</a>
+                    <a href="#">Drama</a>
+                    <a href="#">Comedia</a>
+                    <a href="index.html">Cerar sesion</a>
+                </ul>
+                
+            </ul>
+        </div>
+
+        </div>
+
+        <div class="filtros">
+            <button class="active">Aventuras</button>
+            <button>Animadas</button>
+            <button>Drama</button>
+        </div>
+
+        <p id="copy-category">Descubre emocionantes películas de aventura llenas de acción, peligro y exóticos lugares en CINESCAPE.</p>
+
+        <div id="cont-aventuras">
+            <h2>Estrenos:</h2>
+            <hr>
+            <div class="cont-caratula">
+                <button class="caratula" onclick="showModal()">
+                    <img src="img/guardianes3.jpg" alt="Guardianes de la galaxia">
+                </button>
+                <button class="caratula" onclick="showModal()">
+                    <img src="img/mariobros.jpg" alt="Guardianes de la galaxia">
+                </button>
+                <button class="caratula" onclick="showModal()">
+                    <img src="img/flash.jpg" alt="Guardianes de la galaxia">
+                </button>
+                <button class="caratula" onclick="showModal()">
+                    <img src="img/oppenheimer_drama.jpg" alt="Guardianes de la galaxia">
+                </button>
+            </div>
+
+            <div id="cont-aventuras__part2">
+                <h2 class="txt-prox">Proximamente:</h2>
+                <hr>
+                <div class="cont-caratula">
+                    <button class="caratula" onclick="showModal()">
+                        <img src="img/flash.jpg" alt="Guardianes de la galaxia">
+                    </button>
+                    <button class="caratula" onclick="showModal()">
+                        <img src="img/megalodon.jpg" alt="Guardianes de la galaxia">
+                    </button>
+                    <button class="caratula" onclick="showModal()">
+                        <img src="img/barbie.jpeg" alt="Guardianes de la galaxia">
+                    </button>
+                    <button class="caratula" onclick="showModal()">
+                        <img src="img/oppenheimer_drama.jpg" alt="Guardianes de la galaxia">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="model-pelicula">
+            <button onclick="closeModal()">X</button>
+            <img src="img/mariobros.jpg" alt="" class="caratula-img">
+            <img src="img/boton_play1.png" alt="" class="btn-play">
+            <h2>Super Mario <br> Bros. La Película</h2>
+            <hr>
+            <p>Estreno: 06-Abr-2023</p>
+            <p>Acción, Comedia</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, cumque. Maiores tenetur nam, nisi illum possimus magnam dolor quos laudantium labore ut dolore repellat libero similique officiis minus recusandae asperiores?</p>
+        </div>
+
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

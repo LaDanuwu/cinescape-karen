@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Reset estilo por defecto */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+/* Definir variables de marca (si llegan a cambiar es fácils) */
+:root{
+    --color-primary: #6644b8;
+    --color-secondary: #bb00bd;
+    --color-fondoA: #221039;
+    --color-fondoB: #37274b;
+}
+
+/* Estilos PÁGINA DE INICIO */
+#cont-inicio{
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    /* Img y su fondo (ya que es transparente) */
+    background: url("../img/home-img.png") var(--color-fondoA);
+    /* Tanto los a como p */
+    text-align: center;
+    padding-top: 415px;
+}
+#cont-inicio p{
+    color: white;
+    font-size: 18px;
+    padding: 0 60px;
+}
+.btn-principal{
+    padding: 14px 10px;
+    background: var(--color-primary);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    display: block;
+    max-width: 90%;
+    margin: 70px auto 10px;
+    text-decoration: none;
+}
+.btn-secundario{
+    /* Evitar usar el margin para alejar */
+    padding: 14px 10px;
+    background: var(--color-secondary);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    display: block;
+    max-width: 90%;
+    margin: 20px auto 0;
+    text-decoration: none;
+}
+
+/* ESTILOS DE REGISTRO */
+#cont-registro{
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    /* Img y su fondo (Es transparente) */
+    background: url("../img/register-img.png") var(--color-fondoA);
+    text-align: center;
+    padding-top: 200px;
+}
+#cont-registro p{
+    color: white;
+    font-size: 18px;
+    padding: 0 60px;
+}
+#cont-registro form{
+    width: 90%;
+    margin: 40px auto 0;
+}
+#cont-registro form input{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+/* ESTILOS HOME */
+#cont-home{
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: var(--color-fondoA);
+    position: relative;
+}
+#cont-home .header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15px;
+}
+#cont-home .header button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+#cont-home .header img{
+    width: 50px;
+}
+/* aplicar estilos a un elemento hijo específico (no necesidad de poner clase)*/
+#cont-home .header a:nth-child(3) img{
+    border-radius: 50%;
+}
+/* panel lateral del MENU */
+#panel-lateral{
+    width: 280px;
+    height: 100%;
+    position: absolute;
+    left: -450px;
+    top: 0;
+    z-index: 9;
+    background: var(--color-fondoA);
+    transition: 1s;
+}
+#panel-lateral img{
+    position: absolute;
+    width: 65px;
+    height: 60px;
+    top: 12px;
+    right: -24px;
+    border-radius: 20px 0 20px 0;
+    padding: 5px;
+}
+#panel-lateral.active{
+    left: 0;
+}
+#panel-lateral h2{
+    color: #fff;
+    font-size: 40px;
+    padding: 40px 30px;
+}
+#panel-lateral ul{
+    width: 70%;
+    margin: 20px auto;
+}
+#panel-lateral ul a{
+    display: block;
+    padding: 18px;
+    background: #1f1e1e;
+    border-radius: 22px;
+    color: #fff;
+    margin: 20px 0;
+    text-decoration: none;
+    font-size: 22px;
+    transition: .5s;   
+}
+#panel-lateral ul a:hover{
+    background: #6644B8;
+}
+  
+
+#cont-home .filtros{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    background: var(--color-fondoB);
+    border: 2px solid var(--color-primary);
+    border-radius: 12px;
+}
+#cont-home .filtros button{
+    background: transparent;
+    padding: 12px 10px;
+    width: 33.3%;
+    border-radius: 8px;
+    border-color: transparent;
+    color: white;
+}
+#cont-home .filtros button.active{
+    background: var(--color-primary);
+    font-weight: 600;
+}
+#copy-category{
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+#cont-aventuras{
+    width: 90%;
+    margin: 0 auto;
+}
+#cont-aventuras h2{
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+#cont-aventuras hr{
+    width: 140px;
+    border: 2px solid var(--color-primary);
+    margin: 4px 0 20px;
+}
+#cont-aventuras .cont-caratula{
+    display: flex;
+    overflow-x: scroll;
+}
+#cont-aventuras .cont-caratula .caratula{
+    background: white;
+    border: transparent;
+    border-radius: 12px 0 12px 0;
+    width: 250px;
+    padding: 2px;
+    margin-right: 10px; 
+}
+.cont-caratula .caratula img{
+    width: 160px;
+    height: 100%;
+    border-radius: 12px 0 12px 0;
+    padding: 5px;
+}
+#cont-aventuras .txt-prox{
+    margin-top: 20px;
+}
+#model-pelicula{
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    display: none;
+}
+#model-pelicula.active{
+    display: block;
+}
+#model-pelicula button{
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    z-index: 999;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+#model-pelicula .caratula-img{
+    width: 100%;
+}
+#model-pelicula .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+#model-pelicula h2{
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primary);
+}
+#model-pelicula p{
+    font-size: 18px;
+    color: white;
+    margin: 6px 0;
+}
